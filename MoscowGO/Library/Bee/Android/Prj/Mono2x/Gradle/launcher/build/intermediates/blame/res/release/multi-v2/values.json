@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\MoscowGOHack\\MoscowGO\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\MoscowGOHack\\MoscowGOHACK\\MoscowGO\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\zabor\\.gradle\\caches\\transforms-2\\files-2.1\\722ccff209d3a74ff1cc3750caf4b09e\\appcompat-v7-25.1.0\\res\\values\\values.xml",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\MoscowGOHack\\MoscowGO\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\MoscowGOHack\\MoscowGOHACK\\MoscowGO\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "2,2",
@@ -40,24 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\MoscowGOHack\\MoscowGO\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,101,158,214,263,309",
-                        "endColumns": "45,56,55,48,45,46",
-                        "endOffsets": "96,153,209,258,304,351"
-                    },
-                    "to": {
-                        "startLines": "178,184,185,186,187,188",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "12059,12393,12450,12506,12555,12601",
-                        "endColumns": "45,56,55,48,45,46",
-                        "endOffsets": "12100,12445,12501,12550,12596,12643"
-                    }
-                },
-                {
-                    "source": "C:\\MoscowGOHack\\MoscowGO\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\MoscowGOHack\\MoscowGOHACK\\MoscowGO\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "5,2,7",
                         "startColumns": "0,0,0",
@@ -73,6 +56,23 @@
                         "endLines": "1239,1518,1522",
                         "endColumns": "8,8,8",
                         "endOffsets": "80035,101395,101622"
+                    }
+                },
+                {
+                    "source": "C:\\MoscowGOHack\\MoscowGOHACK\\MoscowGO\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,101,158,214,263,309",
+                        "endColumns": "45,56,55,48,45,46",
+                        "endOffsets": "96,153,209,258,304,351"
+                    },
+                    "to": {
+                        "startLines": "178,184,185,186,187,188",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "12059,12393,12450,12506,12555,12601",
+                        "endColumns": "45,56,55,48,45,46",
+                        "endOffsets": "12100,12445,12501,12550,12596,12643"
                     }
                 }
             ]
