@@ -18,7 +18,7 @@ public class NextScene : MonoBehaviour
     
     public void OnClick()
     {
-        if (_login.text.Length > 3 && _pass.text == _passcheck.text)
+        if (_login.text.Length >= 3 && _pass.text == _passcheck.text)
         {
             LoginPassHolder.Playername = _login.text;
             SceneManager.LoadScene(1);
