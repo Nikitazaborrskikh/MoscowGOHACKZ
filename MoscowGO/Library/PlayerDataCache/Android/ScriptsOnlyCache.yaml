@@ -2,16 +2,19 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraFollow
+    - EventPointer
     - LoginHolder
     - Mapbox.Examples.CameraBillboard
     - Mapbox.Examples.DragableDirectionWaypoint
     - Mapbox.Examples.FeatureUiMarker
     - Mapbox.Examples.ImmediatePositionWithLocationProvider
     - Mapbox.Examples.LabelTextSetter
+    - Mapbox.Examples.LocationStatus
     - Mapbox.Examples.MakiHelper
     - Mapbox.Examples.PoiLabelTextSetter
     - Mapbox.Examples.PoiMarkerHelper
     - Mapbox.Examples.RotateWithLocationProvider
+    - Mapbox.Examples.SpawnOnMap
     - Mapbox.Examples.TextMeshOutline
     - Mapbox.Unity.Location.AngleSmoothingAverage
     - Mapbox.Unity.Location.AngleSmoothingLowPass
@@ -34,6 +37,7 @@ ScriptsOnlyBuild:
     - Mapbox.Unity.Utilities.Runnable
     - NextScene
     - ScriptablePalette
+    - ValueAdd
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.RiderScriptEditorData
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -67,16 +71,22 @@ ScriptsOnlyBuild:
     Assembly-CSharp:
     - Mapbox.Unity.Location.DeviceLocationProvider/DebuggingInEditor
     - Mapbox.Unity.Map.CameraBoundsTileProviderOptions
+    - Mapbox.Unity.Map.ColliderOptions
+    - Mapbox.Unity.Map.CoreVectorLayerProperties
+    - Mapbox.Unity.Map.CustomStyleBundle
     - Mapbox.Unity.Map.DefaultMapExtents
     - Mapbox.Unity.Map.EditorPreviewOptions
     - Mapbox.Unity.Map.ElevationLayerProperties
     - Mapbox.Unity.Map.ElevationModificationOptions
     - Mapbox.Unity.Map.ElevationRequiredOptions
+    - Mapbox.Unity.Map.GeometryExtrusionOptions
+    - Mapbox.Unity.Map.GeometryMaterialOptions
     - Mapbox.Unity.Map.ImageryLayer
     - Mapbox.Unity.Map.ImageryLayerProperties
     - Mapbox.Unity.Map.ImageryRasterOptions
     - Mapbox.Unity.Map.LayerPerformanceOptions
     - Mapbox.Unity.Map.LayerSourceOptions
+    - Mapbox.Unity.Map.LineGeometryOptions
     - Mapbox.Unity.Map.MapExtentOptions
     - Mapbox.Unity.Map.MapLocationOptions
     - Mapbox.Unity.Map.MapOptions
@@ -91,10 +101,14 @@ ScriptsOnlyBuild:
     - Mapbox.Unity.Map.TerrainSideWallOptions
     - Mapbox.Unity.Map.TileJsonData
     - Mapbox.Unity.Map.UnityLayerOptions
+    - Mapbox.Unity.Map.VectorFilterOptions
     - Mapbox.Unity.Map.VectorLayer
     - Mapbox.Unity.Map.VectorLayerProperties
+    - Mapbox.Unity.Map.VectorSubLayerProperties
     - Mapbox.Unity.MeshGeneration.Data.AtlasEntity
     - Mapbox.Unity.MeshGeneration.Modifiers.FeatureBundle
+    - Mapbox.Unity.MeshGeneration.Modifiers.MaterialList
+    - Mapbox.Utils.Vector2d
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
     - TMPro.FontAssetCreationSettings
@@ -178,49 +192,61 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16136}
     - Class: 114
-      Script: {instanceID: 16190}
+      Script: {instanceID: 16192}
     - Class: 114
-      Script: {instanceID: 16484}
+      Script: {instanceID: 16196}
     - Class: 114
-      Script: {instanceID: 16542}
+      Script: {instanceID: 16486}
     - Class: 114
-      Script: {instanceID: 16698}
+      Script: {instanceID: 16544}
     - Class: 114
-      Script: {instanceID: 16896}
+      Script: {instanceID: 16644}
     - Class: 114
-      Script: {instanceID: 16954}
+      Script: {instanceID: 16700}
     - Class: 114
-      Script: {instanceID: 17040}
+      Script: {instanceID: 16900}
     - Class: 114
-      Script: {instanceID: 17232}
+      Script: {instanceID: 16958}
     - Class: 114
-      Script: {instanceID: 17374}
+      Script: {instanceID: 17044}
     - Class: 114
-      Script: {instanceID: 17418}
+      Script: {instanceID: 17238}
     - Class: 114
-      Script: {instanceID: 17580}
+      Script: {instanceID: 17380}
     - Class: 114
-      Script: {instanceID: 17818}
+      Script: {instanceID: 17424}
     - Class: 114
-      Script: {instanceID: 17936}
+      Script: {instanceID: 17588}
     - Class: 114
-      Script: {instanceID: 18198}
+      Script: {instanceID: 17808}
     - Class: 114
-      Script: {instanceID: 18442}
+      Script: {instanceID: 17828}
     - Class: 114
-      Script: {instanceID: 18550}
+      Script: {instanceID: 17946}
     - Class: 114
-      Script: {instanceID: 18804}
+      Script: {instanceID: 18208}
     - Class: 114
-      Script: {instanceID: 18884}
+      Script: {instanceID: 18452}
     - Class: 114
-      Script: {instanceID: 19906}
+      Script: {instanceID: 18560}
     - Class: 114
-      Script: {instanceID: 20040}
+      Script: {instanceID: 18814}
     - Class: 114
-      Script: {instanceID: 32404}
+      Script: {instanceID: 18836}
     - Class: 114
-      Script: {instanceID: 32996}
+      Script: {instanceID: 18894}
+    - Class: 114
+      Script: {instanceID: 19152}
+    - Class: 114
+      Script: {instanceID: 19514}
+    - Class: 114
+      Script: {instanceID: 19918}
+    - Class: 114
+      Script: {instanceID: 20052}
+    - Class: 114
+      Script: {instanceID: 26558}
+    - Class: 114
+      Script: {instanceID: 27922}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -293,69 +319,73 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16142}
     - Class: 114
-      Script: {instanceID: 16190}
+      Script: {instanceID: 16192}
     - Class: 114
-      Script: {instanceID: 16218}
+      Script: {instanceID: 16220}
     - Class: 114
-      Script: {instanceID: 16332}
+      Script: {instanceID: 16334}
     - Class: 114
-      Script: {instanceID: 16370}
+      Script: {instanceID: 16372}
     - Class: 114
-      Script: {instanceID: 16396}
+      Script: {instanceID: 16398}
     - Class: 114
-      Script: {instanceID: 16456}
+      Script: {instanceID: 16458}
     - Class: 114
-      Script: {instanceID: 16484}
+      Script: {instanceID: 16486}
     - Class: 114
-      Script: {instanceID: 16642}
+      Script: {instanceID: 16644}
     - Class: 114
-      Script: {instanceID: 16812}
+      Script: {instanceID: 16816}
     - Class: 114
-      Script: {instanceID: 16840}
+      Script: {instanceID: 16844}
     - Class: 114
-      Script: {instanceID: 16850}
+      Script: {instanceID: 16854}
     - Class: 114
-      Script: {instanceID: 16964}
+      Script: {instanceID: 16968}
     - Class: 114
-      Script: {instanceID: 17088}
+      Script: {instanceID: 17092}
     - Class: 114
-      Script: {instanceID: 17120}
+      Script: {instanceID: 17124}
     - Class: 114
-      Script: {instanceID: 17162}
+      Script: {instanceID: 17166}
     - Class: 114
-      Script: {instanceID: 17374}
+      Script: {instanceID: 17228}
     - Class: 114
-      Script: {instanceID: 17418}
+      Script: {instanceID: 17380}
     - Class: 114
-      Script: {instanceID: 17440}
+      Script: {instanceID: 17424}
     - Class: 114
-      Script: {instanceID: 17580}
+      Script: {instanceID: 17446}
     - Class: 114
-      Script: {instanceID: 17660}
+      Script: {instanceID: 17588}
     - Class: 114
-      Script: {instanceID: 17818}
+      Script: {instanceID: 17668}
     - Class: 114
-      Script: {instanceID: 17936}
+      Script: {instanceID: 17828}
     - Class: 114
-      Script: {instanceID: 18014}
+      Script: {instanceID: 17946}
     - Class: 114
-      Script: {instanceID: 18294}
+      Script: {instanceID: 18024}
     - Class: 114
-      Script: {instanceID: 18384}
+      Script: {instanceID: 18304}
     - Class: 114
-      Script: {instanceID: 18826}
+      Script: {instanceID: 18394}
     - Class: 114
-      Script: {instanceID: 18920}
+      Script: {instanceID: 18836}
     - Class: 114
-      Script: {instanceID: 19074}
+      Script: {instanceID: 18930}
     - Class: 114
-      Script: {instanceID: 19198}
+      Script: {instanceID: 19084}
     - Class: 114
-      Script: {instanceID: 19218}
+      Script: {instanceID: 19210}
     - Class: 114
-      Script: {instanceID: 19536}
+      Script: {instanceID: 19230}
     - Class: 114
-      Script: {instanceID: 22814}
+      Script: {instanceID: 19548}
+    - Class: 114
+      Script: {instanceID: 26558}
+    - Class: 114
+      Script: {instanceID: 27922}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -653,6 +683,12 @@ ScriptsOnlyBuild:
     className: PanelEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UiAnim
+  - hash:
+      serializedVersion: 2
       Hash: 8216e0d9d4736e9dc25b08da6f4ffc65
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Factories
@@ -789,6 +825,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Examples
     className: LabelTextSetter
+  - hash:
+      serializedVersion: 2
+      Hash: 2af77119cc7280cf4d388fe18d75baa2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NextScene
   - hash:
       serializedVersion: 2
       Hash: 3877ae9d3cf603858a708308f5b45537
@@ -969,6 +1011,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
     className: LineMeshModifier
+  - hash:
+      serializedVersion: 2
+      Hash: e963397c358ae16029320d35bdfd585a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoginHolder
   - hash:
       serializedVersion: 2
       Hash: 882cf6c339f4c054931094616d66766f
@@ -1481,6 +1529,12 @@ ScriptsOnlyBuild:
     className: UnityTile
   - hash:
       serializedVersion: 2
+      Hash: 59bc212785cfe314cc276c43f60f4051
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraFollow
+  - hash:
+      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1766,25 +1820,25 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: UiAnim
+    className: Rotater
   - hash:
       serializedVersion: 2
-      Hash: 2af77119cc7280cf4d388fe18d75baa2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: NextScene
+    className: LocationCheck
   - hash:
       serializedVersion: 2
-      Hash: 59bc212785cfe314cc276c43f60f4051
+      Hash: a33ea233b7dc4824ee8f1a8631694955
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: CameraFollow
+    className: EventPointer
   - hash:
       serializedVersion: 2
-      Hash: e963397c358ae16029320d35bdfd585a
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: LoginHolder
+    className: ValueAdd
   platform: 13
   scenePathNames:
   - Assets/Scenes/WelcomeScene.unity

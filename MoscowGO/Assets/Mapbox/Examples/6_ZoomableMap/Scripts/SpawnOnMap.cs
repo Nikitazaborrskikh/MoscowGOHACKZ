@@ -9,6 +9,8 @@
 
 	public class SpawnOnMap : MonoBehaviour
 	{
+		private LocationStatus playerlocation;
+		
 		[SerializeField]
 		AbstractMap _map;
 
@@ -34,6 +36,7 @@
 				var locationString = _locationStrings[i];
 				_locations[i] = Conversions.StringToLatLon(locationString);
 				var instance = Instantiate(_markerPrefab);
+				instance.GetComponent<EventPointer>().EventPos = _locations[i];
 				instance.transform.localPosition = _map.GeoToWorldPosition(_locations[i], true);
 				instance.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
 				_spawnedObjects.Add(instance);
@@ -42,6 +45,12 @@
 
 		private void Update()
 		{
+			Spawner();
+		}
+
+		public void Spawner()
+		{
+			playerlocation = GameObject.Find("Canvas").GetComponent<LocationStatus>();
 			int count = _spawnedObjects.Count;
 			for (int i = 0; i < count; i++)
 			{
@@ -49,6 +58,8 @@
 				var location = _locations[i];
 				spawnedObject.transform.localPosition = _map.GeoToWorldPosition(location, true);
 				spawnedObject.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
+                
+				
 			}
 		}
 	}
